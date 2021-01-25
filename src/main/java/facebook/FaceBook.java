@@ -42,12 +42,12 @@ public class FaceBook {
 		loginBtn.click();
 	}
 
-	public void implicitwait(int MaxWaitTime) {
+	public void implicitWait(int MaxWaitTime) {
 		driver.manage().timeouts().implicitlyWait(MaxWaitTime, TimeUnit.SECONDS);
 	}
 
 	public void inputStatus() {
-		implicitwait(5);
+		implicitWait(5);
 		WebElement status = driver
 				.findElement(By.xpath("//div[contains(@class,'m9osqain a5q79mjw jm1wdb64 k4urcfbm')]"));
 		status.click();
